@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage'
 import CategoryPage from './pages/CategoryPage'
 import FavoritePage from './pages/FavoritePage'
 import NavBar from './components/NavBar'
+import RecipeDetailPage from './pages/RecipeDetailPage'
 
 
 function App() {
@@ -11,11 +12,11 @@ function App() {
   return (
 
     <div>
-      <h1>Recipe Discovery App</h1>
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/category" element={<CategoryPage />} />
+          <Route path="/category/:categoryName" element={<CategoryPage />} />
+          <Route path="/recipe/:id" element={<RecipeDetailPage />} />
           <Route path="/favorites" element={<FavoritePage />} />
         </Routes>
     
