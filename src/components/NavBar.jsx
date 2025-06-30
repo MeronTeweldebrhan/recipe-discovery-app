@@ -43,7 +43,8 @@ function NavBar() {
           type='text'
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className='text-black p-2 rounded'
+          className='ms-200 text-black p-2 rounded'
+          placeholder='Search recipes...'
         />
         <button type='submit' className='ml-2 bg-yellow-400 px-3 py-2 rounded'>
           Search

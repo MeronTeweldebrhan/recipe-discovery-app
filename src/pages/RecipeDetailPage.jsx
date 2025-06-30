@@ -37,13 +37,13 @@ const handleAddFavorites = () => {
 
     <button
      onClick={handleAddFavorites} 
-     className="bg-blue-800 hover:bg-blue-300 text-white font-semibold py-2 px-4 rounded mb-6">
+     className="bg-green-800 hover:bg-blue-300 text-white font-semibold py-2 px-4 rounded mb-6">
       
       Add to Favorites
     </button>
 <button
      onClick={handleRemoveFavorites} 
-     className="ms-3 bg-blue-800 hover:bg-blue-300 text-white font-semibold py-2 px-4 rounded mb-6">
+     className="ms-3 bg-red-800 hover:bg-blue-300 text-white font-semibold py-2 px-4 rounded mb-6">
       
       Remove Favorites
     </button>

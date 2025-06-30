@@ -41,7 +41,9 @@ function HomePage() {
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-11/12 mx-auto mt-4 mb-4 text-center rounded-lg">
           {categories.length > 0 &&
             categories.map((category) => (
-              <NavLink key={category.idCategory} to={`/category/${category.strCategory}`}>
+              <NavLink 
+              className= "block transition-all duration-300 hover:shadow-lg hover:scale-105"
+              key={category.idCategory} to={`/category/${category.strCategory}`}>
                 <img
                   src={category.strCategoryThumb}
                   alt={category.strCategory}
