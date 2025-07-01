@@ -1,12 +1,58 @@
-# React + Vite
+# Recipe Discovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application for discovering, searching, and saving your favorite recipes. Built with React Router, Context API, and TheMealDB API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse recipes by category
+- Search recipes by name or ingredient
+- View detailed recipe information
+- Add recipes to your favorites
+- Responsive and clean UI with Tailwind CSS
 
-## Expanding the ESLint configuration
+## Screenshot
+<img src="./src/assets/Screenshot 2025-06-30 201251.png" alt="screnshot"/>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Tech Stack
+
+- React (Vite)
+- Tailwind CSS
+- JavaScript 
+- Custom `useLocalStorage`,`UseFetch` hooks
+
+## Folder Structure
+```
+recipe-discovery-app/
+  src/
+    components/
+      NavBar.jsx
+    context/
+      FavoratieContext.jsx
+    hooks/
+      UseFetch.js
+      UseLocalStorage.js
+    pages/
+      CategoryPage.jsx
+      FavoritePage.jsx
+      HomePage.jsx
+      RecipeDetailPage.jsx
+      SearchResultPage.jsx
+    App.jsx
+    main.jsx
+    index.css
+  public/
+    vite.svg
+  package.json
+  README.md
+  ```
+  ## Usage
+  - npm install
+  - npm run dev
+
+  ## How It Works
+- Uses TheMealDB API for recipe data
+- Local storage keeps favorite recipes page .
+- Routing and navigation with React Router 
+- Favorites and search state managed with React Context and hooks
+- Responsive design with Tailwind CSS
+
