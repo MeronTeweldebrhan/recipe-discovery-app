@@ -14,7 +14,7 @@ function NavBar() {
   <>
     <nav className="bg-gray-900 py-4 text-white shadow-md">
       <div className="flex items-center justify-between w-11/12 mx-auto">
-        <h1 className="text-2xl font-bold">Posts Social</h1>
+        <h1 className="text-2xl font-bold">Recipe-Discovery</h1>
         <ul className="flex space-x-6">
           <li>
             <NavLink
@@ -44,7 +44,7 @@ function NavBar() {
       type='text'
       value={searchTerm}
        onChange={(e) => setSearchTerm(e.target.value)}
-       className='ms-200 text-black p-2 rounded'
+       className='ms-100 text-black p-2 rounded'
        placeholder='Search recipes...'
      />
      <button type='submit' className='ml-2 bg-yellow-400 px-3 py-2 rounded'>
