@@ -19,11 +19,11 @@ if (!data || !data.meals || data.meals.length === 0) {
     return <h2 className="text-2xl text-center animate-pulse">No results found for "{searchTerm}"</h2>;
   }
   return (  
-    <div>
-       <ul>
+    <div >
+       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-11/12 mx-auto mt-4 mb-4 text-center rounded-lg">
         {data.meals.map((meal) => (
-          <li key={meal.idMeal} className="font-bold">
-            {/* {meal.strMeal} */}
+          <li key={meal.idMeal} >
+            
              <Link key={meal.idMeal} to={`/recipe/${meal.idMeal}`}>
               <h2 className="text-xl font-bold">{meal.strMeal}</h2><hr/>
               <img src= {meal.strMealThumb} />

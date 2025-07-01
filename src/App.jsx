@@ -4,7 +4,7 @@ import CategoryPage from './pages/CategoryPage'
 import FavoritePage from './pages/FavoritePage'
 import NavBar from './components/NavBar'
 import RecipeDetailPage from './pages/RecipeDetailPage'
-import SearchResultPage from './pages/SearcgResultPage'
+import SearchResultPage from './pages/SearchResultPage'
 import {FavoriteProvider}  from './context/FavoraiteContext'
 
 

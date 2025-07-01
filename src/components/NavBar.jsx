@@ -13,9 +13,9 @@ function NavBar() {
 
   return (
     <div>
-      <nav className='bg-gray-900 text-white shadow-md'>
-        <ul className='flex space-x-8'>
-          <li className='ms-10'>
+      <nav className='bg-gray-900 h-13 text-white shadow-md'>
+        <ul className='mt-2 flex space-x-8'>
+          <li className=' ms-10'>
             <NavLink
               className={({ isActive }) =>
                 isActive ? 'text-yellow-400 font-bold' : 'text-white'
